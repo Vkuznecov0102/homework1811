@@ -31,9 +31,9 @@ public class Main {
 
         list.remove("Это пятый объект");
         list.remove(1);
-        System.out.println("После удаления объектов" + list);
+        System.out.println("После удаления объектов " + list);
 
-        list.set(0, "Это неизвестно откуда объект");
+        list.set(1, "Это неизвестно откуда объект");
         System.out.println(list);
 
         list.add(4, "Объект из метода add");

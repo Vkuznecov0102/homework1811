@@ -107,11 +107,14 @@ public class CustomArrayList {
     }
 
     public Object set(int index, Object element) {
-        for (int i = 0; i < realSize; i++) {
-            if (i == index) {
-                array[i] = element;
-            }
-        }
+//        for (int i = 0; i < realSize; i++) {
+//            if (i == index) {
+//                array[i] = element;
+//            }
+//        }
+//        return element;
+
+        array[index] = element;
         return array;
     }
 
