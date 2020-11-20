@@ -115,7 +115,7 @@ public class CustomArrayList {
 //        return element;
 
         array[index] = element;
-        return array;
+        return element;
     }
 
     public void add(int index, Object element) {
@@ -124,6 +124,7 @@ public class CustomArrayList {
         System.arraycopy(array, 0, resArray, 0, array.length);
         System.arraycopy(array, index, resArray, index + 1, array.length - index - 1);
         array[index] = element;
+        realSize++;
 
     }
 
@@ -137,5 +138,4 @@ public class CustomArrayList {
         return stringBuilder.toString();
 
     }
-
 }
