@@ -87,7 +87,10 @@ public class CustomArrayList {
     }
 
     public Object get(int index) {
+
+        checkIndex(index);
         return array[index];
+
     }
 
     public int indexOf(Object o) {
@@ -113,13 +116,14 @@ public class CustomArrayList {
 //            }
 //        }
 //        return element;
-
+        checkIndex(index);
         array[index] = element;
         return element;
     }
 
     public void add(int index, Object element) {
 
+        checkIndex(index);
         Object[] resArray = new Object[array.length + 1];
         System.arraycopy(array, 0, resArray, 0, array.length);
         System.arraycopy(array, index, resArray, index + 1, array.length - index - 1);
